@@ -144,20 +144,6 @@
         ]
       },
       "path": "~/GUI"
-    },
-    {
-      "name": "Test",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/procedures/TestProcedure.java"
-        ],
-        "dependencies": []
-      }
     }
   ],
   "variable_elements": [
