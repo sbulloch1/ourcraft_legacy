@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Ourcraft Materials",
+    "icon": {
+      "value": "CUSTOM:Zombie1"
+    },
+    "showSearch": true
+  }
+}

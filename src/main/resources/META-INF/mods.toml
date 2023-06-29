@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[45,)"
+license="Custom license"
+
+[[mods]]
+modId="ourcraft_legacy"
+version="1.0.0"
+displayName="Ourcraft: Legacy"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="Origen_is_sam, JerCoolDude"
+description="Closed alpha for OC:L devs only"
+
+[[dependencies.ourcraft_legacy]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

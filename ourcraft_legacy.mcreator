@@ -1,0 +1,250 @@
+{
+  "mod_elements": [
+    {
+      "name": "Ourcraft",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ourcraft_materials",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Zombie1",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombie_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Zombie2",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombie_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Skeleton1",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Skeleton2",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_2.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton2Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Levelup",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levelup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/LevelupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Level",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/command/LevelCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Pouch1",
+      "type": "gui",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pouch_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/Pouch1Screen.java",
+          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/Pouch1Menu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "AbilityInventory",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/AbilityInventoryMenu.java",
+          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/AbilityInventoryScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "exp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "addExp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "expModGlobal",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "expModEquip",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "expModBuff",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item_group.ourcraft_legacy.ourcraft_materials": "Ourcraft Materials",
+      "item.ourcraft_legacy.zombie_2": "Dessicated Brain",
+      "item.ourcraft_legacy.skeleton_2": "Calcified Aorta",
+      "item.ourcraft_legacy.zombie_1": "Brutish Molar",
+      "item.ourcraft_legacy.skeleton_1": "Ancient Arrowhead"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Player",
+        "children": []
+      },
+      {
+        "name": "World",
+        "children": []
+      },
+      {
+        "name": "Global",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Entity",
+        "children": []
+      },
+      {
+        "name": "Item",
+        "children": []
+      },
+      {
+        "name": "Block",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ourcraft_legacy",
+    "modName": "Ourcraft: Legacy",
+    "version": "1.0.0",
+    "description": "Closed alpha for OC:L devs only",
+    "author": "Origen_is_sam, JerCoolDude",
+    "websiteURL": "https://mcreator.net",
+    "license": "Custom license",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.ourcraft_legacy",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

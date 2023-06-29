@@ -1,0 +1,9 @@
+{
+  "_fv": 43,
+  "_type": "command",
+  "definition": {
+    "commandName": "level",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"call_procedure\"><field name=\"procedure\">Levelup</field><next><block type=\"entity\"><field name=\"name\">name</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">down</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">name</field></block></statement></block></statement></block></next></block></next></block><block type=\"call_procedure\" x=\"470\" y=\"186\"><field name=\"procedure\">Levelup</field><next><block type=\"number_min\"><field name=\"name\">name</field><field name=\"min\">0</field></block></next></block><block type=\"string\" x=\"196\" y=\"334\"><field name=\"type\">word</field><field name=\"name\">addLevel</field></block></xml>"
+  }
+}
