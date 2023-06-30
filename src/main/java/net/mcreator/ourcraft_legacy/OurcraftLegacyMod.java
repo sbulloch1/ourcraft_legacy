@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ourcraft_legacy.init.OurcraftLegacyModMenus;
 import net.mcreator.ourcraft_legacy.init.OurcraftLegacyModItems;
+import net.mcreator.ourcraft_legacy.init.OurcraftLegacyModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -51,6 +52,7 @@ public class OurcraftLegacyMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		OurcraftLegacyModItems.REGISTRY.register(bus);
+		OurcraftLegacyModEntities.REGISTRY.register(bus);
 
 		OurcraftLegacyModMenus.REGISTRY.register(bus);
 

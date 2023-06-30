@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "ourcraft_legacy:dark_knight",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}
