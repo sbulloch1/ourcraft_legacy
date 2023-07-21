@@ -291,8 +291,8 @@
       "registry_name": "bloodstone_cracked",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneCrackedItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_cracked.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_cracked.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneCrackedItem.java"
         ]
       },
       "path": "~/Item/Gems"

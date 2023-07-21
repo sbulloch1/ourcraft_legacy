@@ -18,9 +18,8 @@ public class BloodstoneCrackedItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\"Tier MMM Gemstone\""));
-		list.add(Component.literal("\"\""));
-		list.add(Component.literal("\"This low-quality gemstone\""));
-		list.add(Component.literal("\"houses a common power.\""));
+		list.add(Component.literal("Tier MMM Gemstone"));
+		list.add(Component.literal("This low-quality gemstone"));
+		list.add(Component.literal("houses a common power."));
 	}
 }

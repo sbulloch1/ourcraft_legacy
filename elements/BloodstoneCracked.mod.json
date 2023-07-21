@@ -25,10 +25,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "\"Tier MMM Gemstone\"",
-      "\"\"",
-      "\"This low-quality gemstone\"",
-      "\"houses a common power.\""
+      "Tier MMM Gemstone",
+      "This low-quality gemstone",
+      "houses a common power."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
