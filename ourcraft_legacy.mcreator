@@ -221,6 +221,65 @@
         ]
       },
       "path": "~/Entity/Regular"
+    },
+    {
+      "name": "OCExp",
+      "type": "command",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oc_exp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/command/OCExpCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CommandGetExp",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_get_exp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGetExpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CommandGiveExp",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_give_exp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGiveExpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
