@@ -20,8 +20,8 @@
       "registry_name": "zombie_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java"
         ]
       }
     },
@@ -34,8 +34,8 @@
       "registry_name": "zombie_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json"
         ]
       }
     },
@@ -48,8 +48,8 @@
       "registry_name": "skeleton_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json"
         ]
       }
     },
@@ -62,8 +62,8 @@
       "registry_name": "skeleton_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_2.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton2Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton2Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_2.json"
         ]
       }
     },
@@ -124,8 +124,8 @@
       "registry_name": "pouch_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/Pouch1Screen.java",
-          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/Pouch1Menu.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/Pouch1Menu.java",
+          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/Pouch1Screen.java"
         ]
       },
       "path": "~/GUI"
