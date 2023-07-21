@@ -31,6 +31,11 @@ public class OurcraftLegacyModTabs {
 					tabData.accept(OurcraftLegacyModItems.SKELETON_1.get());
 					tabData.accept(OurcraftLegacyModItems.SKELETON_2.get());
 					tabData.accept(OurcraftLegacyModItems.ZOMBIE_2.get());
+					tabData.accept(OurcraftLegacyModItems.AMETHYST_CRACKED.get());
+					tabData.accept(OurcraftLegacyModItems.AMETHYST_MUNDANE.get());
+					tabData.accept(OurcraftLegacyModItems.AMETHYST_SUPERIOR.get());
+					tabData.accept(OurcraftLegacyModItems.AMETHYST_ADAMANT.get());
+					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_CRACKED.get());
 				}).withSearchBar());
 	}
 }
