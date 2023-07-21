@@ -221,6 +221,81 @@
         ]
       },
       "path": "~/Entity/Regular"
+    },
+    {
+      "name": "AmethystCracked",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_cracked",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_cracked.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystCrackedItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "AmethystMundane",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_mundane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystMundaneItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_mundane.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "AmethystSuperior",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_superior",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystSuperiorItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_superior.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "AmethystAdamant",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_adamant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystAdamantItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_adamant.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "BloodstoneCracked",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodstone_cracked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneCrackedItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_cracked.json"
+        ]
+      },
+      "path": "~/Item/Gems"
     }
   ],
   "variable_elements": [
@@ -265,12 +340,17 @@
   "language_map": {
     "en_us": {
       "item_group.ourcraft_legacy.ourcraft_materials": "Ourcraft Materials",
+      "item.ourcraft_legacy.bloodstone_cracked": "Cracked Bloodstone",
+      "item.ourcraft_legacy.skeleton_2": "Calcified Aorta",
+      "item.ourcraft_legacy.skeleton_1": "Ancient Arrowhead",
+      "item.ourcraft_legacy.amethyst_mundane": "Mundane Amethyst",
+      "item.ourcraft_legacy.amethyst_adamant": "Adamant",
       "item.ourcraft_legacy.dark_knight_spawn_egg": "Dark Knight Spawn Egg",
       "item.ourcraft_legacy.zombie_2": "Dessicated Brain",
       "entity.ourcraft_legacy.dark_knight": "Dark Knight",
-      "item.ourcraft_legacy.skeleton_2": "Calcified Aorta",
+      "item.ourcraft_legacy.amethyst_superior": "Superior Amethyst",
       "item.ourcraft_legacy.zombie_1": "Brutish Molar",
-      "item.ourcraft_legacy.skeleton_1": "Ancient Arrowhead"
+      "item.ourcraft_legacy.amethyst_cracked": "Cracked Amethyst"
     }
   },
   "foldersRoot": {
@@ -315,7 +395,21 @@
       },
       {
         "name": "Item",
-        "children": []
+        "children": [
+          {
+            "name": "Materials",
+            "children": []
+          },
+          {
+            "name": "Gems",
+            "children": [
+              {
+                "name": "Unique",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Block",
