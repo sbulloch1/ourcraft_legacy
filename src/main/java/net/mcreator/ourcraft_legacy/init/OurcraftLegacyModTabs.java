@@ -36,6 +36,9 @@ public class OurcraftLegacyModTabs {
 					tabData.accept(OurcraftLegacyModItems.AMETHYST_SUPERIOR.get());
 					tabData.accept(OurcraftLegacyModItems.AMETHYST_ADAMANT.get());
 					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_CRACKED.get());
+					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_MUNDANE.get());
+					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_SUPERIOR.get());
+					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_ADAMANT.get());
 				}).withSearchBar());
 	}
 }
