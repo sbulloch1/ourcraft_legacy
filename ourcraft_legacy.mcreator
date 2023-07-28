@@ -20,8 +20,8 @@
       "registry_name": "zombie_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json"
         ]
       }
     },
@@ -34,8 +34,8 @@
       "registry_name": "zombie_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java"
         ]
       }
     },
@@ -425,6 +425,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0.0"
+    },
+    {
+      "name": "abp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],

@@ -75,6 +75,7 @@ public class OurcraftLegacyModVariables {
 			clone.exp = original.exp;
 			clone.level = original.level;
 			clone.addExp = original.addExp;
+			clone.abp = original.abp;
 			if (!event.isWasDeath()) {
 				clone.expModBuff = original.expModBuff;
 			}
@@ -248,6 +249,7 @@ public class OurcraftLegacyModVariables {
 		public double level = 1.0;
 		public double addExp = 0;
 		public double expModBuff = 0.0;
+		public double abp = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -260,6 +262,7 @@ public class OurcraftLegacyModVariables {
 			nbt.putDouble("level", level);
 			nbt.putDouble("addExp", addExp);
 			nbt.putDouble("expModBuff", expModBuff);
+			nbt.putDouble("abp", abp);
 			return nbt;
 		}
 
@@ -269,6 +272,7 @@ public class OurcraftLegacyModVariables {
 			level = nbt.getDouble("level");
 			addExp = nbt.getDouble("addExp");
 			expModBuff = nbt.getDouble("expModBuff");
+			abp = nbt.getDouble("abp");
 		}
 	}
 
@@ -297,6 +301,7 @@ public class OurcraftLegacyModVariables {
 					variables.level = message.data.level;
 					variables.addExp = message.data.addExp;
 					variables.expModBuff = message.data.expModBuff;
+					variables.abp = message.data.abp;
 				}
 			});
 			context.setPacketHandled(true);
