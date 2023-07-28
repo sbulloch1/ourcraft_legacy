@@ -1,11 +1,21 @@
 package net.mcreator.ourcraft_legacy.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.commands.CommandSourceStack;
 
-import javax.annotation.Nullable;
+import net.mcreator.ourcraft_legacy.network.OurcraftLegacyModVariables;
+
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.arguments.StringArgumentType;
+import com.mojang.brigadier.arguments.DoubleArgumentType;
 
 public class CommandGiveStatsProcedure {
-	public static void execute(CommandContext<CommandSourceStack> arguments, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, CommandContext<CommandSourceStack> arguments, Entity entity) {
 		if (entity == null)
 			return;
 		if ((StringArgumentType.getString(arguments, "action")).equals("add") && (StringArgumentType.getString(arguments, "stat")).equals("exp")) {
@@ -182,5 +192,6 @@ public class CommandGiveStatsProcedure {
 					}
 				}.getEntity()).getDisplayName().getString() + "'s abp has been set to " + DoubleArgumentType.getDouble(arguments, "amount") + "!")), false);
 		}
+		LevelupProcedure.execute(world, x, y, z, entity);
 	}
 }

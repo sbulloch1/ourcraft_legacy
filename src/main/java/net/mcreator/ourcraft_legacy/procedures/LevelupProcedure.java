@@ -1,8 +1,18 @@
 package net.mcreator.ourcraft_legacy.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.registries.ForgeRegistries;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
+
+import net.mcreator.ourcraft_legacy.network.OurcraftLegacyModVariables;
 
 public class LevelupProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -92,54 +102,6 @@ public class LevelupProcedure {
 					capability.level = _setval;
 					capability.syncPlayerVariables(entity);
 				});
-			}
-			{
-				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp;
-				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.exp = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			{
-				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level.getServer(), _ent),
-							"/tellraw @a [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"] \",\"bold\":true,\"color\":\"gold\"},{\"selector\":\"@p\",\"color\":\"gray\"},{\"text\":\" is now\",\"color\":\"gray\"},{\"text\":\" Level 3\",\"bold\":true,\"color\":\"yellow\"},{\"text\":\"!\",\"color\":\"gray\"}]");
-				}
-			}
-			{
-				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level.getServer(), _ent),
-							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"] \",\"bold\":true,\"color\":\"gold\"},{\"text\":\"You are now\",\"color\":\"gray\"},{\"text\":\" Level 3\",\"bold\":true,\"color\":\"yellow\"},{\"text\":\"!\",\"color\":\"gray\"}]");
-				}
-			}
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
-				}
-			}
-			{
-				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
-				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.abp = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			{
-				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level.getServer(), _ent),
-							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
-				}
 			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 3
