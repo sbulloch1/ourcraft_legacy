@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ourcraft_legacy:item/item_hollow2"
+    "layer0": "ourcraft_legacy:item/item_zombie2"
   }
 }

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_hollow1",
+    "texture": "item_zombie1",
     "customModelName": "Normal",
     "name": "Brutish Molar",
     "rarity": "UNCOMMON",

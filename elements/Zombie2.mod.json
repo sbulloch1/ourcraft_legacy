@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_hollow2",
+    "texture": "item_zombie2",
     "customModelName": "Normal",
     "name": "Dessicated Brain",
     "rarity": "UNCOMMON",

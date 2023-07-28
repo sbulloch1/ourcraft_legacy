@@ -48,8 +48,8 @@
       "registry_name": "skeleton_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java"
         ]
       }
     },
@@ -62,8 +62,8 @@
       "registry_name": "skeleton_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton2Item.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_2.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_2.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton2Item.java"
         ]
       }
     },
@@ -124,8 +124,8 @@
       "registry_name": "pouch_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/Pouch1Menu.java",
-          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/Pouch1Screen.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/Pouch1Screen.java",
+          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/Pouch1Menu.java"
         ]
       },
       "path": "~/GUI"
@@ -214,9 +214,9 @@
       "registry_name": "dark_knight",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/entity/DarkKnightEntity.java",
           "src/main/resources/data/ourcraft_legacy/forge/biome_modifier/dark_knight_biome_modifier.json",
           "src/main/resources/assets/ourcraft_legacy/models/item/dark_knight_spawn_egg.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/entity/DarkKnightEntity.java",
           "src/main/java/net/mcreator/ourcraft_legacy/client/renderer/DarkKnightRenderer.java"
         ]
       },
@@ -276,8 +276,8 @@
       "registry_name": "amethyst_superior",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystSuperiorItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_superior.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_superior.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystSuperiorItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -291,8 +291,8 @@
       "registry_name": "bloodstone_cracked",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneCrackedItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_cracked.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_cracked.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneCrackedItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -316,6 +316,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -340,6 +356,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -368,8 +400,8 @@
       "registry_name": "bloodstone_adamant",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_adamant.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneAdamantItem.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneAdamantItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_adamant.json"
         ]
       },
       "path": "~/Item/Gems"
@@ -383,8 +415,8 @@
       "registry_name": "bloodstone_mundane",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneMundaneItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_mundane.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_mundane.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneMundaneItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -398,8 +430,8 @@
       "registry_name": "bloodstone_superior",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneSuperiorItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_superior.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_superior.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneSuperiorItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -456,9 +488,12 @@
       "item.ourcraft_legacy.bloodstone_cracked": "Cracked Bloodstone",
       "item.ourcraft_legacy.skeleton_2": "Calcified Aorta",
       "item.ourcraft_legacy.skeleton_1": "Ancient Arrowhead",
+      "item.ourcraft_legacy.bloodstone_mundane": "Mundane Bloodstone",
+      "item.ourcraft_legacy.bloodstone_adamant": "Adamant Bloodstone",
       "item.ourcraft_legacy.amethyst_mundane": "Mundane Amethyst",
-      "item.ourcraft_legacy.amethyst_adamant": "Adamant",
+      "item.ourcraft_legacy.amethyst_adamant": "Adamant Amethyst",
       "item.ourcraft_legacy.dark_knight_spawn_egg": "Dark Knight Spawn Egg",
+      "item.ourcraft_legacy.bloodstone_superior": "Superior Bloodstone",
       "item.ourcraft_legacy.zombie_2": "Dessicated Brain",
       "entity.ourcraft_legacy.dark_knight": "Dark Knight",
       "item.ourcraft_legacy.amethyst_superior": "Superior Amethyst",
