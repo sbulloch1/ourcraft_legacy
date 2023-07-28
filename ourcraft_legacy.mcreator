@@ -20,8 +20,8 @@
       "registry_name": "zombie_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java"
         ]
       }
     },
@@ -34,8 +34,8 @@
       "registry_name": "zombie_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json"
         ]
       }
     },
@@ -223,97 +223,6 @@
       "path": "~/Entity/Regular"
     },
     {
-      "name": "CommandGetExp",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "command_get_exp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGetExpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "OCExp",
-      "type": "command",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oc_exp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/command/OCExpCommand.java"
-        ]
-      }
-    },
-    {
-      "name": "CommandGiveExp",
-      "type": "procedure",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "command_give_exp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGiveExpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AmethystMundane",
       "type": "item",
       "sortid": 15,
@@ -387,6 +296,100 @@
         ]
       },
       "path": "~/Item/Gems"
+    },
+    {
+      "name": "OCStat",
+      "type": "command",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oc_stat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/command/OCStatCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CommandGetStats",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_get_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGetStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CommandGiveStats",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_give_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGiveStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -511,6 +514,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Commands",
+        "children": []
       }
     ]
   },
