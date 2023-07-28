@@ -20,8 +20,8 @@
       "registry_name": "zombie_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie1Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_1.json"
         ]
       }
     },
@@ -34,8 +34,8 @@
       "registry_name": "zombie_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/zombie_2.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Zombie2Item.java"
         ]
       }
     },
@@ -298,15 +298,25 @@
       "path": "~/Item/Gems"
     },
     {
-      "name": "OCStat",
-      "type": "command",
-      "sortid": 19,
+      "name": "CommandGiveStats",
+      "type": "procedure",
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oc_stat",
+      "registry_name": "command_give_stats",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/command/OCStatCommand.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGiveStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
       "path": "~/Commands"
@@ -330,66 +340,69 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
       "path": "~/Commands"
     },
     {
-      "name": "CommandGiveStats",
-      "type": "procedure",
-      "sortid": 21,
+      "name": "OCStat",
+      "type": "command",
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "command_give_stats",
+      "registry_name": "oc_stat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGiveStatsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/java/net/mcreator/ourcraft_legacy/command/OCStatCommand.java"
         ]
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "BloodstoneAdamant",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodstone_adamant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_adamant.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneAdamantItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "BloodstoneMundane",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodstone_mundane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneMundaneItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_mundane.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "BloodstoneSuperior",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodstone_superior",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneSuperiorItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_superior.json"
+        ]
+      },
+      "path": "~/Item/Gems"
     }
   ],
   "variable_elements": [

@@ -15,7 +15,10 @@ import net.mcreator.ourcraft_legacy.item.Zombie2Item;
 import net.mcreator.ourcraft_legacy.item.Zombie1Item;
 import net.mcreator.ourcraft_legacy.item.Skeleton2Item;
 import net.mcreator.ourcraft_legacy.item.Skeleton1Item;
+import net.mcreator.ourcraft_legacy.item.BloodstoneSuperiorItem;
+import net.mcreator.ourcraft_legacy.item.BloodstoneMundaneItem;
 import net.mcreator.ourcraft_legacy.item.BloodstoneCrackedItem;
+import net.mcreator.ourcraft_legacy.item.BloodstoneAdamantItem;
 import net.mcreator.ourcraft_legacy.item.AmethystSuperiorItem;
 import net.mcreator.ourcraft_legacy.item.AmethystMundaneItem;
 import net.mcreator.ourcraft_legacy.item.AmethystCrackedItem;
@@ -34,4 +37,7 @@ public class OurcraftLegacyModItems {
 	public static final RegistryObject<Item> AMETHYST_SUPERIOR = REGISTRY.register("amethyst_superior", () -> new AmethystSuperiorItem());
 	public static final RegistryObject<Item> AMETHYST_ADAMANT = REGISTRY.register("amethyst_adamant", () -> new AmethystAdamantItem());
 	public static final RegistryObject<Item> BLOODSTONE_CRACKED = REGISTRY.register("bloodstone_cracked", () -> new BloodstoneCrackedItem());
+	public static final RegistryObject<Item> BLOODSTONE_MUNDANE = REGISTRY.register("bloodstone_mundane", () -> new BloodstoneMundaneItem());
+	public static final RegistryObject<Item> BLOODSTONE_SUPERIOR = REGISTRY.register("bloodstone_superior", () -> new BloodstoneSuperiorItem());
+	public static final RegistryObject<Item> BLOODSTONE_ADAMANT = REGISTRY.register("bloodstone_adamant", () -> new BloodstoneAdamantItem());
 }

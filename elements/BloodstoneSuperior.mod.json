@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "gem_amethyst",
+    "texture": "gem_bloodstone",
     "customModelName": "Normal",
-    "name": "Adamant Amethyst",
-    "rarity": "UNCOMMON",
+    "name": "Superior Bloodstone",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Ourcraft"
     },
@@ -27,8 +27,8 @@
     "specialInfo": [
       "\"Tier MMM Gemstone\"",
       "\"\"",
-      "\"This top-quality gemstone\"",
-      "\"houses a legendary power.\""
+      "\"This high-quality gemstone\"",
+      "\"houses a rare power.\""
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
