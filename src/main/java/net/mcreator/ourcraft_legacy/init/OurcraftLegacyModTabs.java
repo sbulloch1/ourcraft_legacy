@@ -39,6 +39,22 @@ public class OurcraftLegacyModTabs {
 					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_MUNDANE.get());
 					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_SUPERIOR.get());
 					tabData.accept(OurcraftLegacyModItems.BLOODSTONE_ADAMANT.get());
+					tabData.accept(OurcraftLegacyModItems.RUBY_CRACKED.get());
+					tabData.accept(OurcraftLegacyModItems.RUBY_MUNDANE.get());
+					tabData.accept(OurcraftLegacyModItems.RUBY_SUPERIOR.get());
+					tabData.accept(OurcraftLegacyModItems.RUBY_ADAMANT.get());
+					tabData.accept(OurcraftLegacyModItems.SAPPHIRE_CRACKED.get());
+					tabData.accept(OurcraftLegacyModItems.SAPPHIRE_MUNDANE.get());
+					tabData.accept(OurcraftLegacyModItems.SAPPHIRE_SUPERIOR.get());
+					tabData.accept(OurcraftLegacyModItems.SAPPHIRE_ADAMANT.get());
+					tabData.accept(OurcraftLegacyModItems.DIAMOND_CRACKED.get());
+					tabData.accept(OurcraftLegacyModItems.DIAMOND_MUNDANE.get());
+					tabData.accept(OurcraftLegacyModItems.DIAMOND_SUPERIOR.get());
+					tabData.accept(OurcraftLegacyModItems.DIAMOND_ADAMANT.get());
+					tabData.accept(OurcraftLegacyModItems.CORUNDUM_ADAMANT.get());
+					tabData.accept(OurcraftLegacyModItems.CORUNDUM_CRACKED.get());
+					tabData.accept(OurcraftLegacyModItems.CORUNDUM_MUNDANE.get());
+					tabData.accept(OurcraftLegacyModItems.CORUNDUM_SUPERIOR.get());
 				}).withSearchBar());
 	}
 }

@@ -10,8 +10,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class BloodstoneMundaneItem extends Item {
-	public BloodstoneMundaneItem() {
+public class DiamondAdamantItem extends Item {
+	public DiamondAdamantItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
@@ -20,7 +20,7 @@ public class BloodstoneMundaneItem extends Item {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\"Tier MMM Gemstone\""));
 		list.add(Component.literal("\"\""));
-		list.add(Component.literal("\"This mid-quality gemstone\""));
-		list.add(Component.literal("\"houses an uncommon power.\""));
+		list.add(Component.literal("\"This top-quality gemstone\""));
+		list.add(Component.literal("\"houses a legendary power.\""));
 	}
 }

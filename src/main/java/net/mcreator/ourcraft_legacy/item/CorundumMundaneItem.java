@@ -10,8 +10,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class BloodstoneMundaneItem extends Item {
-	public BloodstoneMundaneItem() {
+public class CorundumMundaneItem extends Item {
+	public CorundumMundaneItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 

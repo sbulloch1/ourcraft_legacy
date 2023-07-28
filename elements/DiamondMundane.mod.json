@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "gem_bloodstone",
+    "texture": "gem_diamond",
     "customModelName": "Normal",
-    "name": "Mundane Bloodstone",
+    "name": "Mundane Diamond",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Ourcraft"
