@@ -48,8 +48,8 @@
       "registry_name": "skeleton_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json"
         ]
       }
     },
@@ -62,8 +62,8 @@
       "registry_name": "skeleton_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_2.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton2Item.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton2Item.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_2.json"
         ]
       }
     },
@@ -124,8 +124,8 @@
       "registry_name": "pouch_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/Pouch1Screen.java",
-          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/Pouch1Menu.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/world/inventory/Pouch1Menu.java",
+          "src/main/java/net/mcreator/ourcraft_legacy/client/gui/Pouch1Screen.java"
         ]
       },
       "path": "~/GUI"
@@ -214,9 +214,9 @@
       "registry_name": "dark_knight",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/entity/DarkKnightEntity.java",
           "src/main/resources/data/ourcraft_legacy/forge/biome_modifier/dark_knight_biome_modifier.json",
           "src/main/resources/assets/ourcraft_legacy/models/item/dark_knight_spawn_egg.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/entity/DarkKnightEntity.java",
           "src/main/java/net/mcreator/ourcraft_legacy/client/renderer/DarkKnightRenderer.java"
         ]
       },
@@ -276,8 +276,8 @@
       "registry_name": "amethyst_superior",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_superior.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystSuperiorItem.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystSuperiorItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_superior.json"
         ]
       },
       "path": "~/Item/Gems"
@@ -291,8 +291,8 @@
       "registry_name": "bloodstone_cracked",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_cracked.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneCrackedItem.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneCrackedItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_cracked.json"
         ]
       },
       "path": "~/Item/Gems"
@@ -400,8 +400,8 @@
       "registry_name": "bloodstone_adamant",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneAdamantItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_adamant.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_adamant.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneAdamantItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -415,8 +415,8 @@
       "registry_name": "bloodstone_mundane",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_mundane.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneMundaneItem.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneMundaneItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_mundane.json"
         ]
       },
       "path": "~/Item/Gems"
@@ -430,8 +430,248 @@
       "registry_name": "bloodstone_superior",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_superior.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneSuperiorItem.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/BloodstoneSuperiorItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/bloodstone_superior.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "SapphireAdamant",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_adamant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireAdamantItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_adamant.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "SapphireSuperior",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_superior",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_superior.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireSuperiorItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "RubyAdamant",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_adamant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_adamant.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/RubyAdamantItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "SapphireCracked",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_cracked",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_cracked.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireCrackedItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "RubySuperior",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_superior",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_superior.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/RubySuperiorItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "DiamondAdamant",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_adamant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_adamant.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondAdamantItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "SapphireMundane",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_mundane",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_mundane.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireMundaneItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "CorundumCracked",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corundum_cracked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumCrackedItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_cracked.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "RubyMundane",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_mundane",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_mundane.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/RubyMundaneItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "DiamondMundane",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_mundane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondMundaneItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_mundane.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "CorundumAdamant",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corundum_adamant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_adamant.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumAdamantItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "CorundumSuperior",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corundum_superior",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumSuperiorItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_superior.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "RubyCracked",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_cracked",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_cracked.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/RubyCrackedItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "CorundumMundane",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corundum_mundane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumMundaneItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_mundane.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "DiamondCracked",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_cracked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondCrackedItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_cracked.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "DiamondSuperior",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_superior",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondSuperiorItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_superior.json"
         ]
       },
       "path": "~/Item/Gems"
