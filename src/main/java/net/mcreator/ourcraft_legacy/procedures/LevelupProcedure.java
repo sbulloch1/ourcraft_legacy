@@ -77,6 +77,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 2
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 800) {
@@ -117,6 +133,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -161,6 +193,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 4
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 1750) {
@@ -201,6 +249,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -245,6 +309,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 6
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 5000) {
@@ -285,6 +365,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -329,6 +425,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 8
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 12800) {
@@ -369,6 +481,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -413,6 +541,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 10
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 17500) {
@@ -453,6 +597,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -497,6 +657,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 12
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 25000) {
@@ -537,6 +713,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -581,6 +773,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 14
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 40000) {
@@ -621,6 +829,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -665,6 +889,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 16
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 60000) {
@@ -705,6 +945,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -749,6 +1005,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 18
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 85000) {
@@ -789,6 +1061,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -833,6 +1121,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 20
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 115000) {
@@ -873,6 +1177,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -917,6 +1237,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 22
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 155000) {
@@ -957,6 +1293,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -1001,6 +1353,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 24
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 205000) {
@@ -1041,6 +1409,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -1085,6 +1469,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 26
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 300000) {
@@ -1125,6 +1525,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -1169,6 +1585,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 28
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 400000) {
@@ -1209,6 +1641,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -1253,6 +1701,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 30
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 500000) {
@@ -1293,6 +1757,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
@@ -1337,6 +1817,22 @@ public class LevelupProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
+				}
+			}
 		}
 		if ((entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level == 32
 				&& (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp >= 600000) {
@@ -1377,6 +1873,22 @@ public class LevelupProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.MASTER, 100000, 1, false);
+				}
+			}
+			{
+				double _setval = (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).abp + 5;
+				entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.abp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level.getServer(), _ent),
+							"/tellraw @p [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"Server\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"gold\"},{\"text\":\" You have gained\",\"color\":\"gray\"},{\"text\":\" 5 Ability Points\",\"bold\":true,\"color\":\"green\"},{\"text\":\"!\",\"color\":\"gray\"}]");
 				}
 			}
 		}
