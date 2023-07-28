@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "gem_bloodstone",
+    "texture": "gem_corundum",
     "customModelName": "Normal",
-    "name": "Mundane Bloodstone",
+    "name": "Adamant Corundum",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Ourcraft"
@@ -27,8 +27,8 @@
     "specialInfo": [
       "\"Tier MMM Gemstone\"",
       "\"\"",
-      "\"This mid-quality gemstone\"",
-      "\"houses an uncommon power.\""
+      "\"This top-quality gemstone\"",
+      "\"houses a legendary power.\""
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
