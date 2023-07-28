@@ -48,8 +48,8 @@
       "registry_name": "skeleton_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/skeleton_1.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/Skeleton1Item.java"
         ]
       }
     },
@@ -214,10 +214,10 @@
       "registry_name": "dark_knight",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/entity/DarkKnightEntity.java",
           "src/main/resources/data/ourcraft_legacy/forge/biome_modifier/dark_knight_biome_modifier.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/client/renderer/DarkKnightRenderer.java",
           "src/main/resources/assets/ourcraft_legacy/models/item/dark_knight_spawn_egg.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/client/renderer/DarkKnightRenderer.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/entity/DarkKnightEntity.java"
         ]
       },
       "path": "~/Entity/Regular"
@@ -261,8 +261,8 @@
       "registry_name": "amethyst_cracked",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystCrackedItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_cracked.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/amethyst_cracked.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/AmethystCrackedItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -746,7 +746,7 @@
       "item.ourcraft_legacy.bloodstone_mundane": "Mundane Bloodstone",
       "item.ourcraft_legacy.bloodstone_adamant": "Adamant Bloodstone",
       "item.ourcraft_legacy.amethyst_mundane": "Mundane Amethyst",
-      "item.ourcraft_legacy.amethyst_adamant": "Adamant",
+      "item.ourcraft_legacy.amethyst_adamant": "Adamant Amethyst",
       "item.ourcraft_legacy.corundum_cracked": "Cracked Corundum",
       "item.ourcraft_legacy.bloodstone_superior": "Superior Bloodstone",
       "item.ourcraft_legacy.zombie_2": "Dessicated Brain",
