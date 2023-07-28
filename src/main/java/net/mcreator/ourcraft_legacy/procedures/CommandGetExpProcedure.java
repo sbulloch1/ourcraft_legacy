@@ -1,5 +1,6 @@
 package net.mcreator.ourcraft_legacy.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
@@ -12,7 +13,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.context.CommandContext;
 
 public class CommandGetExpProcedure {
-	public static void execute(CommandContext<CommandSourceStack> arguments, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, CommandContext<CommandSourceStack> arguments, Entity entity) {
 		if (entity == null)
 			return;
 		try {
@@ -27,7 +28,7 @@ public class CommandGetExpProcedure {
 						}
 					}
 				}.getEntity()) instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal((new Object() {
+					_player.displayClientMessage(Component.literal(((new Object() {
 						public Entity getEntity() {
 							try {
 								return EntityArgument.getEntity(arguments, "target");
@@ -36,11 +37,12 @@ public class CommandGetExpProcedure {
 								return null;
 							}
 						}
-					}.getEntity() + " has " + (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp + " exp and is level "
+					}.getEntity()).getDisplayName().getString() + " has " + (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).exp + " exp and is level "
 							+ (entity.getCapability(OurcraftLegacyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OurcraftLegacyModVariables.PlayerVariables())).level)), false);
 			}
 		} catch (CommandSyntaxException e) {
 			e.printStackTrace();
 		}
+		LevelupProcedure.execute(world, x, y, z, entity);
 	}
 }

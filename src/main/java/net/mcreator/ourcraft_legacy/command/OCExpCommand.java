@@ -34,7 +34,7 @@ public class OCExpCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			CommandGetExpProcedure.execute(arguments, entity);
+			CommandGetExpProcedure.execute(world, x, y, z, arguments, entity);
 			return 0;
 		})).then(Commands.argument("action", StringArgumentType.word()).then(Commands.argument("target", EntityArgument.player()).then(Commands.argument("amount", DoubleArgumentType.doubleArg(0)).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
@@ -46,7 +46,7 @@ public class OCExpCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			CommandGiveExpProcedure.execute(arguments, entity);
+			CommandGiveExpProcedure.execute(world, x, y, z, arguments, entity);
 			return 0;
 		})))).then(Commands.argument("action", StringArgumentType.word()).then(Commands.argument("target", EntityArgument.player()).then(Commands.argument("amount", DoubleArgumentType.doubleArg(0)).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
@@ -58,7 +58,7 @@ public class OCExpCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			CommandGiveExpProcedure.execute(arguments, entity);
+			CommandGiveExpProcedure.execute(world, x, y, z, arguments, entity);
 			return 0;
 		})))));
 	}

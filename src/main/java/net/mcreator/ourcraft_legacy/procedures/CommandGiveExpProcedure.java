@@ -1,5 +1,6 @@
 package net.mcreator.ourcraft_legacy.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
@@ -14,7 +15,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.arguments.DoubleArgumentType;
 
 public class CommandGiveExpProcedure {
-	public static void execute(CommandContext<CommandSourceStack> arguments, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, CommandContext<CommandSourceStack> arguments, Entity entity) {
 		if (entity == null)
 			return;
 		if ((StringArgumentType.getString(arguments, "action")).equals("give")) {
@@ -35,7 +36,7 @@ public class CommandGiveExpProcedure {
 					}
 				}
 			}.getEntity()) instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal((new Object() {
+				_player.displayClientMessage(Component.literal(((new Object() {
 					public Entity getEntity() {
 						try {
 							return EntityArgument.getEntity(arguments, "target");
@@ -44,7 +45,7 @@ public class CommandGiveExpProcedure {
 							return null;
 						}
 					}
-				}.getEntity() + " has gained " + DoubleArgumentType.getDouble(arguments, "amount") + " exp!")), false);
+				}.getEntity()).getDisplayName().getString() + " has gained " + DoubleArgumentType.getDouble(arguments, "amount") + " exp!")), false);
 		}
 		if ((StringArgumentType.getString(arguments, "action")).equals("set")) {
 			{
@@ -64,7 +65,7 @@ public class CommandGiveExpProcedure {
 					}
 				}
 			}.getEntity()) instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal((new Object() {
+				_player.displayClientMessage(Component.literal(((new Object() {
 					public Entity getEntity() {
 						try {
 							return EntityArgument.getEntity(arguments, "target");
@@ -73,7 +74,7 @@ public class CommandGiveExpProcedure {
 							return null;
 						}
 					}
-				}.getEntity() + "'s exp has been set to " + DoubleArgumentType.getDouble(arguments, "amount") + "!")), false);
+				}.getEntity()).getDisplayName().getString() + "'s exp has been set to " + DoubleArgumentType.getDouble(arguments, "amount") + "!")), false);
 		}
 		if ((StringArgumentType.getString(arguments, "action")).equals("setlevel")) {
 			{
@@ -93,7 +94,7 @@ public class CommandGiveExpProcedure {
 					}
 				}
 			}.getEntity()) instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal((new Object() {
+				_player.displayClientMessage(Component.literal(((new Object() {
 					public Entity getEntity() {
 						try {
 							return EntityArgument.getEntity(arguments, "target");
@@ -102,7 +103,8 @@ public class CommandGiveExpProcedure {
 							return null;
 						}
 					}
-				}.getEntity() + "'s level has been set to " + DoubleArgumentType.getDouble(arguments, "amount") + "!")), false);
+				}.getEntity()).getDisplayName().getString() + "'s level has been set to " + DoubleArgumentType.getDouble(arguments, "amount") + "!")), false);
 		}
+		LevelupProcedure.execute(world, x, y, z, entity);
 	}
 }
