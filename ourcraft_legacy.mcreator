@@ -223,97 +223,6 @@
       "path": "~/Entity/Regular"
     },
     {
-      "name": "CommandGetExp",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "command_get_exp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGetExpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "OCExp",
-      "type": "command",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oc_exp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/command/OCExpCommand.java"
-        ]
-      }
-    },
-    {
-      "name": "CommandGiveExp",
-      "type": "procedure",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "command_give_exp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGiveExpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AmethystMundane",
       "type": "item",
       "sortid": 15,
@@ -434,46 +343,31 @@
       "path": "~/Item/Gems"
     },
     {
-      "name": "RubyCracked",
+      "name": "SapphireAdamant",
       "type": "item",
-      "sortid": 22,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ruby_cracked",
+      "registry_name": "sapphire_adamant",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/RubyCrackedItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_cracked.json"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireAdamantItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_adamant.json"
         ]
       },
       "path": "~/Item/Gems"
     },
     {
-      "name": "RubyMundane",
+      "name": "SapphireSuperior",
       "type": "item",
-      "sortid": 23,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ruby_mundane",
+      "registry_name": "sapphire_superior",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/RubyMundaneItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_mundane.json"
-        ]
-      },
-      "path": "~/Item/Gems"
-    },
-    {
-      "name": "RubySuperior",
-      "type": "item",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_superior",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_superior.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/RubySuperiorItem.java"
+          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_superior.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireSuperiorItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -509,91 +403,16 @@
       "path": "~/Item/Gems"
     },
     {
-      "name": "SapphireMundane",
+      "name": "RubySuperior",
       "type": "item",
-      "sortid": 27,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sapphire_mundane",
+      "registry_name": "ruby_superior",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_mundane.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireMundaneItem.java"
-        ]
-      },
-      "path": "~/Item/Gems"
-    },
-    {
-      "name": "SapphireSuperior",
-      "type": "item",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_superior",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_superior.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireSuperiorItem.java"
-        ]
-      },
-      "path": "~/Item/Gems"
-    },
-    {
-      "name": "SapphireAdamant",
-      "type": "item",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_adamant",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireAdamantItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_adamant.json"
-        ]
-      },
-      "path": "~/Item/Gems"
-    },
-    {
-      "name": "DiamondCracked",
-      "type": "item",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_cracked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondCrackedItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_cracked.json"
-        ]
-      },
-      "path": "~/Item/Gems"
-    },
-    {
-      "name": "DiamondMundane",
-      "type": "item",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_mundane",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondMundaneItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_mundane.json"
-        ]
-      },
-      "path": "~/Item/Gems"
-    },
-    {
-      "name": "DiamondSuperior",
-      "type": "item",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_superior",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondSuperiorItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_superior.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_superior.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/RubySuperiorItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -614,16 +433,16 @@
       "path": "~/Item/Gems"
     },
     {
-      "name": "CorundumAdamant",
+      "name": "SapphireMundane",
       "type": "item",
-      "sortid": 37,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "corundum_adamant",
+      "registry_name": "sapphire_mundane",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumAdamantItem.java",
-          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_adamant.json"
+          "src/main/resources/assets/ourcraft_legacy/models/item/sapphire_mundane.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/SapphireMundaneItem.java"
         ]
       },
       "path": "~/Item/Gems"
@@ -644,16 +463,46 @@
       "path": "~/Item/Gems"
     },
     {
-      "name": "CorundumMundane",
+      "name": "RubyMundane",
       "type": "item",
-      "sortid": 39,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "corundum_mundane",
+      "registry_name": "ruby_mundane",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_mundane.json",
-          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumMundaneItem.java"
+          "src/main/java/net/mcreator/ourcraft_legacy/item/RubyMundaneItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_mundane.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "DiamondMundane",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_mundane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondMundaneItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_mundane.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "CorundumAdamant",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corundum_adamant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumAdamantItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_adamant.json"
         ]
       },
       "path": "~/Item/Gems"
@@ -672,6 +521,160 @@
         ]
       },
       "path": "~/Item/Gems"
+    },
+    {
+      "name": "RubyCracked",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_cracked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/RubyCrackedItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/ruby_cracked.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "CorundumMundane",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corundum_mundane",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ourcraft_legacy/models/item/corundum_mundane.json",
+          "src/main/java/net/mcreator/ourcraft_legacy/item/CorundumMundaneItem.java"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "DiamondCracked",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_cracked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondCrackedItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_cracked.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "DiamondSuperior",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_superior",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/item/DiamondSuperiorItem.java",
+          "src/main/resources/assets/ourcraft_legacy/models/item/diamond_superior.json"
+        ]
+      },
+      "path": "~/Item/Gems"
+    },
+    {
+      "name": "CommandGiveStats",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_give_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGiveStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CommandGetStats",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_get_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/procedures/CommandGetStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "OCStat",
+      "type": "command",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oc_stat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ourcraft_legacy/command/OCStatCommand.java"
+        ]
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -815,6 +818,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Commands",
+        "children": []
       }
     ]
   },
