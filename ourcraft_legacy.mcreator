@@ -341,7 +341,7 @@
       "name": "CommandGetStats",
       "type": "procedure",
       "sortid": 20,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "command_get_stats",
       "metadata": {
@@ -440,7 +440,7 @@
       "name": "SapphireAdamant",
       "type": "item",
       "sortid": 29,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sapphire_adamant",
       "metadata": {
@@ -455,7 +455,7 @@
       "name": "SapphireSuperior",
       "type": "item",
       "sortid": 28,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sapphire_superior",
       "metadata": {
@@ -470,7 +470,7 @@
       "name": "RubyAdamant",
       "type": "item",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ruby_adamant",
       "metadata": {
@@ -500,7 +500,7 @@
       "name": "RubySuperior",
       "type": "item",
       "sortid": 24,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ruby_superior",
       "metadata": {
@@ -515,7 +515,7 @@
       "name": "DiamondAdamant",
       "type": "item",
       "sortid": 33,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "diamond_adamant",
       "metadata": {
@@ -530,7 +530,7 @@
       "name": "SapphireMundane",
       "type": "item",
       "sortid": 27,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sapphire_mundane",
       "metadata": {
@@ -545,7 +545,7 @@
       "name": "CorundumCracked",
       "type": "item",
       "sortid": 38,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "corundum_cracked",
       "metadata": {
@@ -605,7 +605,7 @@
       "name": "CorundumSuperior",
       "type": "item",
       "sortid": 40,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "corundum_superior",
       "metadata": {
@@ -620,7 +620,7 @@
       "name": "RubyCracked",
       "type": "item",
       "sortid": 22,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ruby_cracked",
       "metadata": {
@@ -665,7 +665,7 @@
       "name": "DiamondSuperior",
       "type": "item",
       "sortid": 32,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "diamond_superior",
       "metadata": {
